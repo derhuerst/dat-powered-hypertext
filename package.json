@@ -1,0 +1,30 @@
+{
+	"name": "dat-powered-hypertext",
+	"description": "A hypertext UI running inside Beaker Browser.",
+	"version": "0.1.0",
+	"main": "index.js",
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"hypertext",
+		"document",
+		"semantic markup",
+		"content-addressing",
+		"dat"
+	],
+	"author": "Jannis R <mail@jannisr.de>",
+	"homepage": "https://github.com/derhuerst/dat-powered-hypertext",
+	"repository": "derhuerst/dat-powered-hypertext",
+	"bugs": "https://github.com/derhuerst/dat-powered-hypertext/issues",
+	"license": "ISC",
+	"engines": {
+		"node": ">=6"
+	},
+	"dependencies": {
+	},
+	"devDependencies": {
+	},
+	"scripts": {
+	}
+}
