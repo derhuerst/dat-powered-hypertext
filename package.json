@@ -1,10 +1,12 @@
 {
+	"private": true,
 	"name": "dat-powered-hypertext",
 	"description": "A hypertext UI running inside Beaker Browser.",
 	"version": "0.1.0",
 	"main": "index.js",
 	"files": [
-		"index.js"
+		"index.js",
+		"ui"
 	],
 	"keywords": [
 		"hypertext",
@@ -22,9 +24,22 @@
 		"node": ">=6"
 	},
 	"dependencies": {
+		"babel-polyfill": "^6.26.0",
+		"core-js": "^2.5.1",
+		"global": "^4.3.2",
+		"snabbdom": "^0.7.0"
 	},
 	"devDependencies": {
+		"babel-core": "^6.26.0",
+		"babel-preset-env": "^1.6.1",
+		"babelify": "^8.0.0",
+		"beefy": "^2.1.8",
+		"browserify": "^14.5.0",
+		"uglify-es": "^3.1.9"
 	},
 	"scripts": {
+		"start": "beefy index.js:bundle.min.js 9966 --live -- -g babelify",
+		"build": "browserify -g babelify index.js | uglifyjs -mc > bundle.min.js",
+		"prepublishOnly": "npm run build"
 	}
 }
