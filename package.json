@@ -6,7 +6,8 @@
 	"main": "index.js",
 	"files": [
 		"index.js",
-		"ui"
+		"ui",
+		"lib"
 	],
 	"keywords": [
 		"hypertext",
@@ -27,7 +28,10 @@
 		"babel-polyfill": "^6.26.0",
 		"core-js": "^2.5.1",
 		"global": "^4.3.2",
-		"snabbdom": "^0.7.0"
+		"remark-parse": "^4.0.0",
+		"remark-vdom": "^4.1.1",
+		"snabbdom": "^0.7.0",
+		"unified": "^6.1.5"
 	},
 	"devDependencies": {
 		"babel-core": "^6.26.0",

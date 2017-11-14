@@ -3,7 +3,7 @@
 const h = require('snabbdom/h').default
 
 const render = (state, actions) => {
-	return h('div', {}, [])
+	return state.rendered
 }
 
 module.exports = render
